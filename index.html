@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+           background-image: url("back.jpg");
+           object-fit: fill;
+           margin: 0%;
+           padding: 0%;
+           display: flex;
+            justify-content: center;
+           position: relative;
+           flex-wrap: wrap;
+        }
+        nav{
+            background-color: #8c0da3e1;
+          
+           object-fit: fill;
+           flex: 1;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .left{
+            display: flex;
+
+        }
+        .right{
+            display: flex;
+            position: absolute;
+            right: 30px;
+            gap: 2px;
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        li{
+           
+            
+        }
+        a{
+            color: rgb(51, 0, 67);
+            text-decoration: none;
+            
+        }
+        button{
+            color: aliceblue;
+            background-color: #499FE6;
+            border: 1px;
+            border-color: #499FE6;
+            padding: 10px;
+            border-radius: 3px;
+            
+        }
+        #b1{
+            background-color: rgb(186, 184, 184);
+            color: black;
+            
+        }
+        #b2{
+            display: none;
+        }
+        #big{
+            font-size: 70px;
+            font-weight: bold;
+            
+        }
+       #small{
+            color: white; text-align: center;width: 500px;
+        }
+        @media(max-width:550px){
+            #small{
+            color: white; text-align: center;width: 200px;font-weight: 400;font-size: medium;
+        }
+        }
+        @media (max-width:700px){
+            
+        .right{
+            display: none;
+        }
+        #b2{
+            display: inline;
+            background-color: rgb(186, 184, 184);
+            color: black;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- #496EE6 #8A49E6 #5649E6 #499FE6 #BB45E6 -->
+    <nav>
+        <div class="container">
+        <div class="left">
+        <img src="" alt="">
+        <ul style="list-style: none;">
+            <li><a href="https://instagram.com">Features</a></li>
+            <li><a href="https://instagram.com">Pricing</a></li>
+            <li><a href="https://instagram.com">Support</a></li>
+            <li><a href="https://instagram.com">Learning</a></li>
+            <li><a href="https://instagram.com">Blog</a></li>
+            <li><a href="https://instagram.com">What's New</a></li>
+        </ul>
+        <div class="right">
+            <button>Sign Up Free</button>
+            <button id="b1">Log In</button>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <div style="display: flex; flex-direction: column;width:100vw; align-items: center; justify-content: center;text-align: center;">
+       
+            <p id="big">Build your brand. <br>
+            Sell more stuff.</p>
+                <div>
+            <button style="display: flex;flex-wrap: wrap;justify-content: center;">
+                Sign Up Free
+            </button>
+            <button id="b2">Log In</button>
+            </div>
+        </div>
+            <p id="small">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit aliquid quisquam corporis quis doloribus placeat sapiente unde officiis voluptates voluptate, accusantium numquam, ipsa rem architecto in deserunt, sequi repellat beatae.
+            </p>
+       
+    </div>
+</body>
+</html>
